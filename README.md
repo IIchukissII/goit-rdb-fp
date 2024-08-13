@@ -12,7 +12,7 @@ select Count(entity) from infectious_cases;
 ![](./img/1.PNG)
 
 
-## 2. Нормалізація таблиці 'infectious_cases' до 3ї нормальної форми. 
+## 2. Нормалізація таблиці `infectious_cases` до 3ї нормальної форми. 
 
 ```sql
 create table entity (
