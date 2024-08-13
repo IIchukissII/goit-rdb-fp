@@ -41,7 +41,9 @@ create table inf_cases (
     Number_hiv FLOAT,
     Number_tuberculosis FLOAT,
     Number_smallpox FLOAT,
-    Number_cholera_cases FLOAT);
+    Number_cholera_cases FLOAT,
+    FOREIGN KEY (entity_id) REFERENCES entity(id)
+);
 
 insert into inf_cases (entity_id, Year, Number_yaws, polio_cases, cases_guinea_worm, 
                       Number_rabies, Number_malaria, Number_hiv, Number_tuberculosis, 
